@@ -3,7 +3,7 @@ katz_deli=[]
 def line(array)
   if array.length ==0
     puts "The line is currently empty."
-  else array.each { |name, index| puts "The line is currently: (#{index}.) #{name}" }
+  else array.each_with_index { |name, index| puts "The line is currently: #{index+1}. #{name}" }
   end
 end
 
